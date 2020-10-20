@@ -1,0 +1,76 @@
+// Стили для header
+.header {
+    background: #FA8C16;
+    filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.15));
+    padding: 16px 0;
+
+    .container {
+        align-items: center;
+
+        .nav-menu {
+            margin-left: 58px;
+            display: flex;
+            align-items: center;
+
+            .menu-link {
+                font-family: "SF Pro Display", sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 22px;
+
+                &:not(:first-child) {
+                    margin-left: 15px;
+                }
+
+
+                &:hover {
+                    color: #cbbebe;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .header-search {
+            margin-left: auto;
+            width: 237px;
+            height: 32px;
+            position: relative;
+
+            &-input {
+                width: 100%;
+                outline: none;
+                border: 1px solid #D9D9D9;
+                box-sizing: border-box;
+                border-radius: 4px;
+                background: #FFFFFF;
+                padding: 5px 30px 5px 12px;
+                color: #BFBFBF;
+                font-family: "SF Pro Display", sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 22px;
+
+                &::placeholder {
+                    color: #BFBFBF;
+                    font-family: "SF Pro Display", sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+
+            &-btn {
+                position: absolute;
+                right: 10px;
+                background: transparent;
+                border: none;
+                top: 10px;
+                outline: none;
+                padding: 0;
+            }
+        }
+    }
+}
