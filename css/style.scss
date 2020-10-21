@@ -1,3 +1,7 @@
+body {
+    background: #e5e5e5;
+}
+
 a {
     color: #FAFAFA;
     text-decoration: none;
@@ -7,4 +11,12 @@ a {
     width: 90%;
     margin: auto;
     display: flex;
+    box-sizing: border-box;
+}
+
+.main {
+    margin-top: 30px;
+    .container {
+        align-items: flex-start;
+    }
 }

@@ -1,3 +1,7 @@
+body {
+  background: #e5e5e5;
+}
+
 a {
   color: #FAFAFA;
   text-decoration: none;
@@ -10,5 +14,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.main .container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 /*# sourceMappingURL=style.css.map */

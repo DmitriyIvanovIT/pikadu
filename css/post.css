@@ -1,0 +1,217 @@
+.posts {
+  max-width: 800px;
+  width: 80%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.posts .post {
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.posts .post-body {
+  padding: 35px;
+  padding-bottom: 0;
+}
+
+.posts .post-title {
+  margin: 0;
+  margin-bottom: 19px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #262626;
+}
+
+.posts .post-text {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.posts .post .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 22px;
+}
+
+.posts .post .tags .tag {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #BFBFBF;
+}
+
+.posts .post .tags .tag:not(:first-child) {
+  margin-left: 10px;
+}
+
+.posts .post-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #FAFAFA;
+  border-top: 1px solid #E8E8E8;
+  padding: 13px 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.posts .post-footer .post-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.posts .post-footer .post-buttons .likes,
+.posts .post-footer .post-buttons .comments,
+.posts .post-footer .post-buttons .save,
+.posts .post-footer .post-buttons .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.posts .post-footer .post-buttons .likes svg,
+.posts .post-footer .post-buttons .comments svg,
+.posts .post-footer .post-buttons .save svg,
+.posts .post-footer .post-buttons .share svg {
+  fill: #8C8C8C;
+}
+
+.posts .post-footer .post-buttons .likes svg:hover,
+.posts .post-footer .post-buttons .comments svg:hover,
+.posts .post-footer .post-buttons .save svg:hover,
+.posts .post-footer .post-buttons .share svg:hover {
+  fill: #262626;
+}
+
+.posts .post-footer .post-buttons .likes-counter,
+.posts .post-footer .post-buttons .comments-counter {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8C8C8C;
+  margin-left: 7px;
+}
+
+.posts .post-footer .post-buttons .likes.active .likes-counter {
+  color: #36A4E2;
+}
+
+.posts .post-footer .post-buttons .likes.active svg {
+  fill: #36A4E2;
+}
+
+.posts .post-footer .post-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.posts .post-footer .post-author .author-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.posts .post-footer .post-author .author-about .author-name {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  color: #8C8C8C;
+}
+
+.posts .post-footer .post-author .author-about .date-post {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  color: #BFBFBF;
+}
+
+.posts .post-footer .post-author .author-link {
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-left: 9px;
+}
+
+.posts .post-footer .post-author .author-link .author-avatar {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #BFBFBF;
+}
+
+.posts .post-footer .post-author .author-link .author-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.posts .post-footer .post-author .author-link .author-avatar svg {
+  width: 24px;
+  height: 25px;
+}
+/*# sourceMappingURL=post.css.map */
