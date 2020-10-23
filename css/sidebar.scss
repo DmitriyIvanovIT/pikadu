@@ -2,6 +2,37 @@
     display: flex;
     flex-direction: column;
     width: 31%;
+    position: relative;
+    transform: translateX(0);
+    transition: 0.3s;
+
+    &-button {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        margin-left: -30px;
+        background: rgba(0,0,0,.3);
+        box-sizing: border-box;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            transform: rotate(180deg);
+            fill: rgba(255, 255, 255, 0.8);
+            transition: 0.3s;
+        }
+
+        &.active {
+            svg {
+                transform: rotate(0);
+            }
+        }
+    }
 
     .user {
         display: flex;
@@ -185,8 +216,20 @@
     }
 
     &-promo {
+        width: 100%;
+        overflow: hidden;
         margin-top: 20px;
         position: relative;
+        
+
+        .promo-link {
+            width: 100%;
+            
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
 
         .promo-title {
             display: flex;
@@ -206,5 +249,103 @@
             color: #FFFFFF;
             cursor: pointer;
         }
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        position: fixed;
+        right: 0;
+        top: 63px;
+        transform: translateX(100%);
+        background: #fff;
+        padding: 10px;
+        box-shadow: 1px 1px 10px rgba(0,0,0,.15);
+        height: 100%;
+
+        &.active {
+            transform: translateX(0%);
+        }
+
+        &-button {
+            display: flex;
+        }
+
+        .user {
+            padding: 6px 25px;
+        }
+
+        &-nav {
+            .sidebar-menu-item {
+                padding: 16px;
+                padding-left: 48px;
+            }
+        }
+
+        &-card {
+            .card-header {
+                padding: 13px 15px;
+            }
+
+            .card-body {
+                padding: 13px 15px;
+            }
+        }
+
+        &-promo {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 683px) {
+    .sidebar {
+        width: 60%;
+
+        .user {
+            padding: 6px;
+        }
+
+        .user-info .user-avatar {
+            width: 30px;
+            height: 30px;
+            margin-right: 14px;
+        }
+
+        &-nav {
+            .sidebar-menu-item {
+                padding: 8px;
+                padding-left: 38px;
+            }
+        }
+
+        &-public {
+            font-size: 12px;
+            height: 30px;
+        }
+
+        &-card {
+            .card-header {
+                &-title {
+                    font-size: 12px;
+                }
+            }
+
+            .card-body {
+                &-title {
+                    font-size: 12px;
+                }
+
+                &-text {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-height: 736px) {
+    .sidebar-card {
+        display: none;
     }
 }
