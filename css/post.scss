@@ -173,6 +173,105 @@
             }
         }
     }
+
+    .add-post {
+        display: flex;
+        flex-direction: column;
+
+        .add-title,
+        .add-text {
+            padding: 23px 31px;
+            font-family: 'SFProDisplay-Semibold', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+
+            &::placeholder {
+                color: #000000;
+            }
+        }
+
+        .add-text {
+            margin-top: 16px;
+            min-height: 55vh;
+            font-family: 'SFProDisplay-Regular', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+
+            &::placeholder {
+                color: #595959;
+            }
+        }
+
+        .add-buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        &-button {
+            height: 50px;
+            width: 40%;
+            background: #FAAD14;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-family: 'SFProDisplay-Regular', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            margin-right: 24px;
+
+            svg {
+                width: 19px;
+                height: 14px;
+                margin-right: 6px;
+
+                fill: #FFFFFF;
+            }
+
+            &:hover {
+                background: #fa7f15;
+                color: #acacac;
+
+                svg {
+                    fill: #acacac;
+                }
+            }
+        }
+
+        .button-outline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 125px;
+            background: #FFFFFF;
+            border: 1px solid #FFC53D;
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin-left: 12px;
+            font-family: 'SFProDisplay-Regular', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+
+            svg {
+                fill: #FFC53D;
+                width: 14px;
+                height: 11px;
+                margin-right: 5px;
+            }
+        }
+    }
 }
 
 @media (max-width: 990px) {
@@ -210,5 +309,21 @@
         .tag:not(:first-child) {
             margin: 0;
         }
+    }
+
+    .posts .add-post .add-buttons {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .posts .add-post-button {
+        width: 100%;
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .posts .add-post .button-outline {
+        margin: 0;
     }
 }
