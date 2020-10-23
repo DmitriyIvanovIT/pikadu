@@ -1,6 +1,6 @@
 .posts {
   max-width: 800px;
-  width: 80%;
+  width: 67%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -21,7 +21,7 @@
 .posts .post-title {
   margin: 0;
   margin-bottom: 19px;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'SFProDisplay-Semibold', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -30,7 +30,7 @@
 }
 
 .posts .post-text {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'SFProDisplay-Regular', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -51,7 +51,7 @@
 }
 
 .posts .post .tags .tag {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'SFProDisplay-Regular', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -121,7 +121,7 @@
 
 .posts .post-footer .post-buttons .likes-counter,
 .posts .post-footer .post-buttons .comments-counter {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'SFProDisplay-Regular', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -161,7 +161,7 @@
 }
 
 .posts .post-footer .post-author .author-about .author-name {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'SFProDisplay-Regular', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -171,7 +171,7 @@
 }
 
 .posts .post-footer .post-author .author-about .date-post {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'SFProDisplay-Regular', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;

@@ -3,6 +3,10 @@
     background: #FA8C16;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
     padding: 16px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
 
     .container {
         align-items: center;
@@ -28,7 +32,7 @@
             align-items: center;
 
             .menu-link {
-                font-family: "SF Pro Display", sans-serif;
+                font-family: 'SFProDisplay-Regular', sans-serif;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 14px;
@@ -61,7 +65,7 @@
                 background: #FFFFFF;
                 padding: 5px 30px 5px 12px;
                 color: #BFBFBF;
-                font-family: "SF Pro Display", sans-serif;
+                font-family: "SFProDisplay-Regular", sans-serif;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 14px;
@@ -69,7 +73,7 @@
 
                 &::placeholder {
                     color: #BFBFBF;
-                    font-family: "SF Pro Display", sans-serif;
+                    font-family: "SFProDisplay-Regular", sans-serif;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 14px;

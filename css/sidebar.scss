@@ -1,0 +1,210 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+
+    .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #FAFAFA;
+        border: 1px solid #E8E8E8;
+        padding: 15px 25px;
+        box-sizing: border-box;
+
+        &-info {
+            display: flex;
+            align-items: center;
+
+            .user-avatar {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 17px;
+            }
+
+            .user-name {
+                font-family: 'SFProDisplay-Semibold', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #595959;
+                margin-right: auto;
+            }
+        }
+
+        .exit {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #000000;
+
+                &:hover {
+                    fill: #5E5555;
+                }
+            }
+        }
+    }
+
+    &-nav {
+        background: #FFFFFF;
+        border: 1px solid #E8E8E8;
+        box-sizing: border-box;
+        border-top: none;
+
+        .sidebar-menu {
+            margin: 0;
+            list-style-type: none;
+            padding: 0;
+
+            &-item {
+                box-sizing: border-box;
+                padding: 16px;
+                padding-left: 48px;
+
+                .sidebar-menu-link {
+                    font-family: 'SFProDisplay-Regular', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #595959;
+                }
+
+
+
+                &:hover {
+                    background: #FFFBE6;
+
+                    .sidebar-menu-link {
+                        color: #FAAD14;
+                    }
+                }
+
+                &.active {
+                    background: #FFFBE6;
+                    border-right: 3px solid #FAAD14;
+
+                    .sidebar-menu-link {
+                        color: #FAAD14;
+                    }
+                }
+            }
+        }
+    }
+
+    &-public {
+        height: 50px;
+        width: 100%;
+        background: #FAAD14;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        font-family: 'SFProDisplay-Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        svg {
+            width: 19px;
+            height: 14px;
+            margin-right: 6px;
+
+            fill: #FFFFFF;
+        }
+
+        &:hover {
+            background: #fa7f15;
+            color: #acacac;
+
+            svg {
+                fill: #acacac;
+            }
+        }
+    }
+
+    &-card {
+        background: #FFFFFF;
+        border: 1px solid #E8E8E8;
+        box-sizing: border-box;
+
+        .card-header {
+            display: block;
+            padding: 23px 25px;
+            background: #FAFAFA;
+            border-bottom: 1px solid #E8E8E8;
+
+            &-title {
+                margin: 0;
+                font-family: 'SFProDisplay-Semibold', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #595959
+            }
+        }
+
+        .card-body {
+            display: block;
+            padding: 22px 40px 30px 25px;
+
+            &-title {
+                margin: 0;
+                font-family: 'SFProDisplay-Semibold', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #D48806;
+            }
+
+            &-text {
+                margin: 0;
+                margin-top: 10px;
+                font-family: 'SFProDisplay-Regular', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 22px;
+                color: #262626;
+            }
+        }
+    }
+
+    &-promo {
+        margin-top: 20px;
+        position: relative;
+
+        .promo-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 99px;
+            height: 21px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #C4C4C4;
+            font-family: 'SFProDisplay-Regular', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 20px;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+}

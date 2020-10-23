@@ -1,0 +1,246 @@
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 31%;
+}
+
+.sidebar .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #FAFAFA;
+  border: 1px solid #E8E8E8;
+  padding: 15px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sidebar .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .user-info .user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 17px;
+}
+
+.sidebar .user-info .user-name {
+  font-family: 'SFProDisplay-Semibold', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+  margin-right: auto;
+}
+
+.sidebar .user .exit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.sidebar .user .exit svg {
+  width: 20px;
+  height: 20px;
+  fill: #000000;
+}
+
+.sidebar .user .exit svg:hover {
+  fill: #5E5555;
+}
+
+.sidebar-nav {
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: none;
+}
+
+.sidebar-nav .sidebar-menu {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-nav .sidebar-menu-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px;
+  padding-left: 48px;
+}
+
+.sidebar-nav .sidebar-menu-item .sidebar-menu-link {
+  font-family: 'SFProDisplay-Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+}
+
+.sidebar-nav .sidebar-menu-item:hover {
+  background: #FFFBE6;
+}
+
+.sidebar-nav .sidebar-menu-item:hover .sidebar-menu-link {
+  color: #FAAD14;
+}
+
+.sidebar-nav .sidebar-menu-item.active {
+  background: #FFFBE6;
+  border-right: 3px solid #FAAD14;
+}
+
+.sidebar-nav .sidebar-menu-item.active .sidebar-menu-link {
+  color: #FAAD14;
+}
+
+.sidebar-public {
+  height: 50px;
+  width: 100%;
+  background: #FAAD14;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+  font-family: 'SFProDisplay-Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-public svg {
+  width: 19px;
+  height: 14px;
+  margin-right: 6px;
+  fill: #FFFFFF;
+}
+
+.sidebar-public:hover {
+  background: #fa7f15;
+  color: #acacac;
+}
+
+.sidebar-public:hover svg {
+  fill: #acacac;
+}
+
+.sidebar-card {
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sidebar-card .card-header {
+  display: block;
+  padding: 23px 25px;
+  background: #FAFAFA;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.sidebar-card .card-header-title {
+  margin: 0;
+  font-family: 'SFProDisplay-Semibold', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.sidebar-card .card-body {
+  display: block;
+  padding: 22px 40px 30px 25px;
+}
+
+.sidebar-card .card-body-title {
+  margin: 0;
+  font-family: 'SFProDisplay-Semibold', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D48806;
+}
+
+.sidebar-card .card-body-text {
+  margin: 0;
+  margin-top: 10px;
+  font-family: 'SFProDisplay-Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+}
+
+.sidebar-promo {
+  margin-top: 20px;
+  position: relative;
+}
+
+.sidebar-promo .promo-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 99px;
+  height: 21px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #C4C4C4;
+  font-family: 'SFProDisplay-Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+/*# sourceMappingURL=sidebar.css.map */

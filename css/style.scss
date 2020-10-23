@@ -1,10 +1,34 @@
+@font-face {
+    font-family: 'SFProDisplay-Regular';
+    src: local("SFProDisplay-Regular"),
+    url('../font/SFProDisplay-Regular.woff') format("woff"),
+    url('../font/SFProDisplay-Regular.woff2') format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Semibold';
+    src: local("SFProDisplay-Semibold"),
+    url('../font/SFProDisplay-Semibold.woff') format("woff"),
+    url('../font/SFProDisplay-Semibold.woff2') format("woff2");
+    font-weight: bold;
+}
+
 body {
     background: #e5e5e5;
+    font-family: 'SFProDisplay-Regular', sans-serif;
 }
 
 a {
     color: #FAFAFA;
     text-decoration: none;
+    outline: none;
+}
+
+button {
+    outline: none;
+    background: transparent;
+    border: none;
 }
 .container {
     max-width: 1200px;
@@ -16,7 +40,9 @@ a {
 
 .main {
     margin-top: 30px;
+    position: relative;
     .container {
         align-items: flex-start;
+        justify-content: space-between;
     }
 }
